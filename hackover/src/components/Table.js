@@ -1,42 +1,63 @@
-import React from 'react'
-import './Table.css'
+
+import axios from 'axios';
+import {useState,useEffect} from 'react';
+import {MDTable,MDBTableHead,MDBTableBody,MDBRow,MDBCol,MDBContainer, MDBTable} from 'mdb-react-ui-kit';
 function Table() {
+  const [data,setData]= useState([]);
+  useEffect(()=>{
+    loadUsersData();
+  },[]);
+  const loadUsersData =async ()=>{
+    return await axios.get("http://localhost:5000/events").then((response)=>setData(response.data)).catch((err)=> console.log(err));
+
+  }
+
   return (
-    <>
-    <div className="container contab table-responsive">
-    <table class="table table-hover">
-  <thead>
-    <tr>
+   <>
+<MDBContainer>
+  <div >
    
-      <th scope="col">Event</th>
-      <th scope="col">Status</th>
-      <th scope="col">Verification</th>
-        <th scope="col">Progress</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-     
-      <td>Mark</td>
-      <td><h5><span class="badge bg-secondary">New</span></h5></td>
-      <td>@mdo</td>
-      <td></td>
-    </tr>
-    <tr>
-     
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-   
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-    </div>
-    </>
+    <MDBRow>
+      <MDBCol>
+        <MDBTable hover>
+          <MDBTableHead dark>
+              <tr>
+                <th className="col">Event Name</th>
+                <th className="col">Status</th>
+                <th className="col">Revenue</th>
+                <th className="col">Venue</th>
+         
+                <th className="col">Category</th>
+              </tr>
+          </MDBTableHead>
+          {data.length===0 ? (
+            <MDBTableBody className='align-center mb-0'>
+              <tr>
+                <td colSpan={8}>No data</td>
+              </tr>
+            </MDBTableBody>):(
+              data.map((item,index)=>(
+                <MDBTableBody key={index}>
+                  <tr>
+                  
+                    <td>{item.event}</td>
+                    <td>{item.status}</td>
+                    <td>{item.revenue}</td>
+                    <td>{item.venue}</td>
+                    <td>{item.category}</td>
+                 
+                  </tr>
+                </MDBTableBody>
+              ))
+            )
+
+          }
+        </MDBTable>
+      </MDBCol>
+    </MDBRow>
+  </div>
+</MDBContainer>
+   </>
   )
 }
 

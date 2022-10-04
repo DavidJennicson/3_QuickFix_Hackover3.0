@@ -1,16 +1,22 @@
 
 import './App.css';
 import Card from './components/Card';
+import Logform from './components/Logform';
 // import Table from './components/Table';
 import Navbar from './components/Navbar';
+import RevGraph from './components/RevGraph';
+import Table from './components/Table';
+import React from 'react';
+
 
 function App() {
   return (
    <>
-<Navbar/>
-<main className='mt-5 pt-3'>
-<h1>bde</h1>
-</main>
+{/* <Navbar/>
+<Card/>
+<br />
+<Table/> */}
+<Logform/>
    </>
   );
 }

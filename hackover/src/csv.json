@@ -1,0 +1,137 @@
+{
+  "events":[
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Future",
+      "revenue": 2000,
+      "venue": "Churchgate",
+      "category": "Concert"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Future",
+      "revenue": 2000,
+      "venue": "Churchgate",
+      "category": "Concert"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Future",
+      "revenue": 2000,
+      "venue": "Churchgate",
+      "category": "Concert"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Future",
+      "revenue": 2000,
+      "venue": "Churchgate",
+      "category": "Concert"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Mic Drop",
+      "status": "Cancelled",
+      "revenue": 800,
+      "venue": "Andheri",
+      "category": "Comedy Show"
+    },
+    {
+      "event": "Hackover",
+      "status": "Ongoing",
+      "revenue": 500,
+      "venue": "Bandra",
+      "category": "hackathon"
+    },
+    {
+      "event": "Mic Drop",
+      "status": "Cancelled",
+      "revenue": 800,
+      "venue": "Andheri",
+      "category": "Comedy Show"
+    },
+    {
+      "event": "Mic Drop",
+      "status": "Cancelled",
+      "revenue": 800,
+      "venue": "Andheri",
+      "category": "Comedy Show"
+    },
+    {
+      "event": "Mic Drop",
+      "status": "Cancelled",
+      "revenue": 800,
+      "venue": "Andheri",
+      "category": "Comedy Show"
+    },
+    {
+      "event": "Mic Drop",
+      "status": "Cancelled",
+      "revenue": 800,
+      "venue": "Andheri",
+      "category": "Comedy Show"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Finished",
+      "revenue": 100,
+      "venue": "Virar",
+      "category": "Cultural Fest"
+    },
+    {
+      "event": "Euphoria",
+      "status": "Finished",
+      "revenue": 100,
+      "venue": "Virar",
+      "category": "Cultural Fest"
+    }
+  ]
+}
