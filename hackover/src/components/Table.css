@@ -1,0 +1,17 @@
+.contab
+{
+    border-radius: 10px;
+    background-color: white;
+}
+.pgb
+{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+}
+.pgr
+{
+    background-color: red;
+    width: 70%;
+    height: 20px;
+}
