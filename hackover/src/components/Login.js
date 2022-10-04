@@ -1,10 +1,30 @@
 import React from 'react'
-import './Login.css'
+// import './Login.css'
+import Lottie from 'react-lottie';
+import animationData from './lotties/56142-festival-calendar.json'
 function Login() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
   return (
 <>
 <div className="container-sm">
-<form>
+  <div className="row">
+    <div className="col-6">
+    <Lottie 
+	    options={defaultOptions}
+        height={400}
+        width={400}
+      />
+    </div>
+    <div className="col-6">
+    <h2>Login</h2>
+    <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
@@ -20,6 +40,10 @@ function Login() {
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+    </div>
+  </div>
+  
+
 </div>
 </>
   )
