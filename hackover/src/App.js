@@ -13,6 +13,9 @@ import BarChart from './components/BarChart';
 import MainNav from './components/MainNav';
 import BottomNav from './components/BottomNav';
 import Organizers from './components/organizer/Organizers';
+import Notallowed from './components/Notallowed';
+import OrgNavbar from './components/organizer/OrgNavbar';
+import Orgcon from './components/organizer/Orgcon';
 
 function App() {
   const [userData, setUserData] = useState({
@@ -35,8 +38,10 @@ function App() {
   });
   return (
    <>
-<MainNav/>
-<Organizers/>
+<Orgcon/>
+<div className="mt-5 pt-5"><h1>My Events</h1></div>
+{/* <Organizers/> */}
+
 {/* <Card/>
 <div className="container">
 <div style={{ width: 600 }}>
