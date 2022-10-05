@@ -1,11 +1,11 @@
 
 import './App.css';
 import Card from './components/Card';
-
+import {BrowserRouter,Route,Routes } from 'react-router-dom';
 // import Table from './components/Table';
 import AdminNavbar from './components/AdminNavbar';
-import RevGraph from './components/RevGraph';
-import Table from './components/Table';
+
+import Table from './components/EventTable';
 import {React,useState} from 'react';
 import Login from './components/Login';
 import { UserData } from "./Data";
@@ -16,7 +16,7 @@ function App() {
     labels: UserData.map((data) => data.year),
     datasets: [
       {
-        label: "Users Gained",
+        label: "Revenue",
         data: UserData.map((data) => data.revGain),
         backgroundColor: [
           "rgba(75,192,192,1)",
@@ -33,14 +33,21 @@ function App() {
   return (
    <>
 <AdminNavbar/>
-<Card/>
-<div className="container-sm">
-<div style={{ width: 500 }}>
+{/* <Card/>
+<div className="container">
+<div style={{ width: 600 }}>
         <BarChart chartData={userData} />
       </div>
     
 </div>
-<Table/>
+<Table/> */}
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<div><Card/></div>}/>
+  <Route path='/harsh' element={<div><Table/></div>}/>
+  <Route path='/pooja' element={<div><h1>Shreeshalilya</h1></div>}/>
+</Routes>
+</BrowserRouter>
 
    </>
   );
