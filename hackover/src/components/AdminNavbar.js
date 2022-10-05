@@ -3,7 +3,7 @@ import React from 'react'
 import './AdminNavbar.css'
 import { BsSearch ,BsChevronDown} from 'react-icons/bs';
 import {FaUserAlt} from 'react-icons/fa';
-
+import{MDBBadge} from 'mdb-react-ui-kit'
 function Navbar() {
   return (
   <>
@@ -113,7 +113,7 @@ function Navbar() {
               <div class="collapse" id="layouts">
                 <ul class="navbar-nav ps-3">
                   <li>
-                    <a href="/" class="nav-link px-3">
+                    <a href="/pooja" class="nav-link px-3">
                       <span class="me-2"
                         ><i class="bi bi-speedometer2"></i
                       ></span>
@@ -126,7 +126,7 @@ function Navbar() {
             <li>
               <a href="/harsh" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Pages</span>
+                <span>Verification <MDBBadge className='ms-2'>72</MDBBadge></span>
               </a>
             </li>
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>

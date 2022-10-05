@@ -8,14 +8,14 @@ function Table() {
     loadUsersData();
   },[]);
   const loadUsersData =async ()=>{
-    return await axios.get("http://localhost:5000/events").then((response)=>setData(response.data)).catch((err)=> console.log(err));
+    return await axios.get("http://localhost:5000/verification").then((response)=>setData(response.data)).catch((err)=> console.log(err));
 
   }
 
   return (
    <>
 
-<div className="container">
+<div className="container mt-5 pt-3">
 <div >
    
    <MDBRow>
@@ -23,13 +23,10 @@ function Table() {
        <MDBTable hover>
          <MDBTableHead dark>
              <tr>
-               <th className="col">Event Name</th>
-               <th className="col">Status</th>
-               <th className="col">Revenue</th>
-               <th className="col">Venue</th>
-        
-               <th className="col">Category</th>
-               <th className='col'>Action</th>
+               <th className="col">Name</th>
+               <th className="col">Phone</th>
+               <th className="col">Email</th>
+              
              </tr>
          </MDBTableHead>
          {data.length===0 ? (
@@ -42,12 +39,10 @@ function Table() {
                <MDBTableBody key={index}>
                  <tr>
                  
-                   <td>{item.event}</td>
-                   <td>{item.status}</td>
-                   <td>{item.revenue}</td>
-                   <td>{item.venue}</td>
-                   <td>{item.category}</td>
-                   <td><button className='btn btn-primary'>open</button></td>
+                   <td>{item.name}</td>
+                   <td>{item.phone}</td>
+                   <td>{item.email}</td>
+                  
                 
                  </tr>
                </MDBTableBody>

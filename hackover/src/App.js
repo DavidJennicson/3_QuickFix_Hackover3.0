@@ -4,7 +4,7 @@ import Card from './components/Card';
 import {BrowserRouter,Route,Routes } from 'react-router-dom';
 // import Table from './components/Table';
 import AdminNavbar from './components/AdminNavbar';
-
+import Vertable from './components/Vertable'
 import Table from './components/EventTable';
 import {React,useState} from 'react';
 import Login from './components/Login';
@@ -45,7 +45,7 @@ function App() {
 <Routes>
   <Route path='/' element={<div><Card/></div>}/>
   <Route path='/harsh' element={<div><Table/></div>}/>
-  <Route path='/pooja' element={<div><h1>Shreeshalilya</h1></div>}/>
+  <Route path='/pooja' element={<div><Vertable/></div>}/>
 </Routes>
 </BrowserRouter>
 

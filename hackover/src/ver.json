@@ -1,52 +1,54 @@
-[
-  {
-    "Name": "shree",
-    "Phone Number": 98203,
-    "Mail": "shree@gmail.com"
-  },
-  {
-    "Name": "david",
-    "Phone Number": 78439,
-    "Mail": "david@gmail.com"
-  },
-  {
-    "Name": "pooja",
-    "Phone Number": 34567,
-    "Mail": "pooja@gmail.com"
-  },
-  {
-    "Name": "harsh",
-    "Phone Number": 87765,
-    "Mail": "harsh@gmail.com"
-  },
-  {
-    "Name": "lavil",
-    "Phone Number": 78965,
-    "Mail": "lavil@gmail.com"
-  },
-  {
-    "Name": "pratham",
-    "Phone Number": 68544,
-    "Mail": "pratham@gmail.com"
-  },
-  {
-    "Name": "jeshuran",
-    "Phone Number": 45678,
-    "Mail": "jeshuran@gmail.com"
-  },
-  {
-    "Name": "kaushik",
-    "Phone Number": 87654,
-    "Mail": "kaushik@gmail.com"
-  },
-  {
-    "Name": "shubham",
-    "Phone Number": 56889,
-    "Mail": "shubham@gmail.com"
-  },
-  {
-    "Name": "omkar",
-    "Phone Number": 45678,
-    "Mail": "omkar@gmail.com"
-  }
-]
+{
+  "verification":[
+    {
+      "name": "shree",
+      "phone": 98203,
+      "email": "shree@gmail.com"
+    },
+    {
+      "name": "david",
+      "phone": 78439,
+      "email": "david@gmail.com"
+    },
+    {
+      "name": "pooja",
+      "phone": 34567,
+      "email": "pooja@gmail.com"
+    },
+    {
+      "name": "harsh",
+      "phone": 87765,
+      "email": "harsh@gmail.com"
+    },
+    {
+      "name": "lavil",
+      "phone": 78965,
+      "email": "lavil@gmail.com"
+    },
+    {
+      "name": "pratham",
+      "phone": 68544,
+      "email": "pratham@gmail.com"
+    },
+    {
+      "name": "jeshuran",
+      "phone": 45678,
+      "email": "jeshuran@gmail.com"
+    },
+    {
+      "name": "kaushik",
+      "phone": 87654,
+      "email": "kaushik@gmail.com"
+    },
+    {
+      "name": "shubham",
+      "phone": 56889,
+      "email": "shubham@gmail.com"
+    },
+    {
+      "name": "omkar",
+      "phone": 45678,
+      "email": "omkar@gmail.com"
+    }
+  ]
+}
