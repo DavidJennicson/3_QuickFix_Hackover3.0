@@ -10,6 +10,9 @@ import {React,useState} from 'react';
 import Login from './components/Login';
 import { UserData } from "./Data";
 import BarChart from './components/BarChart';
+import MainNav from './components/MainNav';
+import BottomNav from './components/BottomNav';
+import Organizers from './components/organizer/Organizers';
 
 function App() {
   const [userData, setUserData] = useState({
@@ -32,7 +35,8 @@ function App() {
   });
   return (
    <>
-<AdminNavbar/>
+<MainNav/>
+<Organizers/>
 {/* <Card/>
 <div className="container">
 <div style={{ width: 600 }}>
@@ -41,13 +45,15 @@ function App() {
     
 </div>
 <Table/> */}
-<BrowserRouter>
+
+{/* main admin components */}
+{/* <BrowserRouter>
 <Routes>
   <Route path='/' element={<div><Card/></div>}/>
   <Route path='/harsh' element={<div><Table/></div>}/>
   <Route path='/pooja' element={<div><Vertable/></div>}/>
 </Routes>
-</BrowserRouter>
+</BrowserRouter> */}
 
    </>
   );
