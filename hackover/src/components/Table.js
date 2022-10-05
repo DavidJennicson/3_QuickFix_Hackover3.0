@@ -28,6 +28,7 @@ function Table() {
                 <th className="col">Venue</th>
          
                 <th className="col">Category</th>
+                <th className='col'>Action</th>
               </tr>
           </MDBTableHead>
           {data.length===0 ? (
@@ -45,6 +46,7 @@ function Table() {
                     <td>{item.revenue}</td>
                     <td>{item.venue}</td>
                     <td>{item.category}</td>
+                    <td><button className='btn btn-primary'>o</button></td>
                  
                   </tr>
                 </MDBTableBody>

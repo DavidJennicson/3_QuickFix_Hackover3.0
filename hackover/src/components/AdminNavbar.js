@@ -1,6 +1,6 @@
 import React from 'react'
 // import eventscape from'./eventscape.svg'
-import './Navbar.css'
+import './AdminNavbar.css'
 import { BsSearch } from 'react-icons/bs';
 import {FaUserAlt} from 'react-icons/fa';
 function Navbar() {

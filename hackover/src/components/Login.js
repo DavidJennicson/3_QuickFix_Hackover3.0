@@ -1,5 +1,5 @@
 import React from 'react'
-// import './Login.css'
+import './Login.css'
 import Lottie from 'react-lottie';
 import animationData from './lotties/56142-festival-calendar.json'
 function Login() {
