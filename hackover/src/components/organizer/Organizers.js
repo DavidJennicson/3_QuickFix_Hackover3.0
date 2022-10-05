@@ -35,7 +35,7 @@ function Organizers() {
    
    <div class="mb-3">
    <label htmlFor="exampleInputEmail1" class="htmlForm-label">Enter your Event Name</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea maxlength="255" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
    </div>
    <div className="mb-3">
@@ -74,6 +74,10 @@ function Organizers() {
 <div className="mb-3">
     <label htmlFor="">Enter Registration  Amount</label>
     <input type="number"  class="form-control"/>
+</div>
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Small file input example</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file" />
 </div>
    <input  class="form-control btn btn-primary"type="submit" />
     </form>
