@@ -16,6 +16,8 @@ import Organizers from './components/organizer/Organizers';
 import Notallowed from './components/Notallowed';
 import OrgNavbar from './components/organizer/OrgNavbar';
 import Orgcon from './components/organizer/Orgcon';
+import Eventinfoedit from './components/Eventinfoedit';
+import Home from './Home';
 
 function App() {
   const [userData, setUserData] = useState({
@@ -38,8 +40,8 @@ function App() {
   });
   return (
    <>
-<Orgcon/>
-<div className="mt-5 pt-5"><h1>My Events</h1></div>
+
+
 {/* <Organizers/> */}
 
 {/* <Card/>
@@ -52,13 +54,16 @@ function App() {
 <Table/> */}
 
 {/* main admin components */}
-{/* <BrowserRouter>
+<BrowserRouter>
 <Routes>
-  <Route path='/' element={<div><Card/></div>}/>
+  <Route path='/' element={<div><MainNav/><Home/></div>}/>
   <Route path='/harsh' element={<div><Table/></div>}/>
   <Route path='/pooja' element={<div><Vertable/></div>}/>
+  <Route path='/orgc' element={<Orgcon/>}/>
+  <Route path='/evedit' element={<Eventinfoedit/>}/>
+  <Route path='/eveform' element={<Organizers/>}/>
 </Routes>
-</BrowserRouter> */}
+</BrowserRouter>
 
    </>
   );

@@ -5,7 +5,7 @@ function MainNav() {
   <>
     <nav class="navbar navbar-expand-lg navbar-dark ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Eventron</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,14 +19,14 @@ function MainNav() {
             For Organizers
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Business Login</a></li>
+            <li><a class="dropdown-item" href="/orgc">Business Login</a></li>
             
-            <li><a class="dropdown-item" href="#">Host Event</a></li>
+            <li><a class="dropdown-item" href="/eveform">Host Event</a></li>
             
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="/evedit">Pricing</a>
         </li>
       
       </ul>

@@ -113,7 +113,7 @@ function Navbar() {
               <div class="collapse" id="layouts">
                 <ul class="navbar-nav ps-3">
                   <li>
-                    <a href="/pooja" class="nav-link px-3">
+                    <a href="/" class="nav-link px-3">
                       <span class="me-2"
                         ><i class="bi bi-speedometer2"></i
                       ></span>

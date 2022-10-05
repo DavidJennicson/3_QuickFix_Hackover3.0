@@ -1,13 +1,15 @@
 import React from 'react'
 import BottomNav from '../BottomNav'
+import MainNav from '../MainNav'
 import './Organizer.css'
 function Organizers() {
   return (
  <>
 
-
-<div className="container">
+<MainNav/>
+<div className="container mt-4 formcon">
     <form action="">
+      <h1>Event Registration</h1>
     <label htmlFor="exampleInputEmail1" class="htmlForm-label">What kind of event are you hosting?</label>
     <br />
     <div className="container">
